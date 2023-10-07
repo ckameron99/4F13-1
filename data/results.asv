@@ -1,0 +1,17 @@
+hyperparameters after training according to a)
+    mean: []
+     cov: [-2.0540 -0.1087]
+     lik: -2.1385
+
+cov = [-1 -1] gives same hyp
+[-1 -2]: b1.fig
+mean: []
+     cov: [2.0844 -0.3624]
+     lik: -0.4109
+
+[-1 1]: b2.fig
+    mean: []
+     cov: [2.0847 -0.3625]
+     lik: -0.4109
+
+[-1 10]: 

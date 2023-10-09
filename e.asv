@@ -1,0 +1,13 @@
+file_e = load("cw1e.mat");
+
+x = file_e.x
+y = file_e.y
+
+%mesh(reshape(x(:,1),11,11),reshape(x(:,2),11,11),reshape(y,11,11));
+
+meanfunc = [];
+covfunc = @covSEard;
+covfunc = {@covSum, {@covSEard, @covSEard}}; 
+likfunc = @likGauss;
+
+hyp = struct('mean', [], 'cov', hyppe, 'lik', 0);
